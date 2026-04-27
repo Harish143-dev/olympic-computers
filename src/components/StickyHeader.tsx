@@ -26,7 +26,7 @@ const StickyHeader = () => {
       </div>
 
       {/* Main header */}
-      <div className="container flex items-center gap-4 py-3">
+      <div className="container flex items-center gap-4">
         <button className="lg:hidden text-primary-foreground" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
