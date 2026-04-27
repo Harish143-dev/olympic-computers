@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+
+    /* Primary: deep graphite */
+    --primary: 220 14% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 220 13% 18%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    /* Accent: refined teal for CTAs */
+    --accent: 174 62% 38%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive: muted rose, not loud red */
+    --destructive: 350 60% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 174 62% 38%;
+
+    --radius: 0.5rem;
+
+    --surface: 220 14% 97%;
+    --success: 160 50% 38%;
+    --warning: 38 70% 50%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 220 13% 9%;
+    --foreground: 220 14% 96%;
+    --card: 220 13% 12%;
+    --card-foreground: 220 14% 96%;
+    --popover: 220 13% 12%;
+    --popover-foreground: 220 14% 96%;
+    --primary: 220 14% 90%;
+    --primary-foreground: 220 13% 13%;
+    --secondary: 220 13% 16%;
+    --secondary-foreground: 220 14% 96%;
+    --muted: 220 13% 16%;
+    --muted-foreground: 220 9% 65%;
+    --accent: 174 55% 45%;
+    --accent-foreground: 220 13% 9%;
+    --destructive: 350 50% 40%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 220 13% 20%;
+    --input: 220 13% 20%;
+    --ring: 174 55% 45%;
+    --surface: 220 13% 12%;
+    --success: 160 45% 45%;
+    --warning: 38 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
